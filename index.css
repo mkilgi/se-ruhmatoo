@@ -19,3 +19,9 @@ a {
     border: 2px solid white;
     border-radius: 30px;
 }
+
+#value {
+    font-size: 30px;
+    color: green;
+    margin: 20px;
+}

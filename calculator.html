@@ -10,20 +10,36 @@
 </head>
 
 <body>
-    <form action="#" onsubmit="calculate();return false">
-        <div class="form">
-            <span>Initial investment</span>
-            <input type="number" id="investment" name="investment" required>
+    <div class="formbox">
+        <form action="#" onsubmit="calculate();return false">
+            <div class="form">
+                <span>Initial investment</span>
+                <input type="number" id="investment" name="investment" required>
 
-            <span>Interest rate</span>
-            <input type="number" id="interest" name="interest" required>
+                <span>Interest rate</span>
+                <input type="number" id="interest" name="interest" required>
 
-            <span>Years</span>
-            <input type="number" id="years" name="years" required>
+                <span>Years</span>
+                <input type="number" id="years" name="years" required>
 
-            <button type="submit" id="submit" name="submit">submit</button>
+                <button type="submit" id="submit" name="submit">Calculate</button>
 
-            <script src="calculator.js"></script>
+                <script src="calculator.js"></script>
+            </div>
+    </div>
+
+    <div class="stats">
+        <span id="value">0</span>
+    </div>
+
+    <div class="results">
+        <canvas id="graph">
+
+        </canvas>
+    </div>
+
+
+
 </body>
 
 </html>
