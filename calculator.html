@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Calculator</title>
 </head>
 
@@ -23,8 +24,6 @@
                 <input type="number" id="years" name="years" required>
 
                 <button type="submit" id="submit" name="submit">Calculate</button>
-
-                <script src="calculator.js"></script>
             </div>
     </div>
 
@@ -32,14 +31,9 @@
         <span id="value">0</span>
     </div>
 
-    <div class="results">
-        <canvas id="graph">
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 
-        </canvas>
-    </div>
-
-
-
+    <script src="calculator.js"></script>
 </body>
 
 </html>

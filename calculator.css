@@ -23,6 +23,7 @@ button {
     margin: 10px;
     width: 306px;
     height: 38px;
+    border: 0;
 }
 
 form {
@@ -48,4 +49,9 @@ span {
     color: green;
     font-size: 40px;
     margin: 20px;
+}
+
+#graph {
+    width: 1000px;
+    height: 500px;
 }
