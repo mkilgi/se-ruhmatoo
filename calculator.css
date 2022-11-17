@@ -13,16 +13,18 @@ input {
     display: block;
     margin: 10px;
     width: 300px;
-    height: 30px;
+    height: 35px;
 }
 
 button {
     background-color: green;
     color: white;
     font-size: 20px;
-    margin: 10px;
-    width: 306px;
-    height: 38px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 320px;
+    height: 40px;
     border: 0;
 }
 
@@ -35,6 +37,8 @@ input {
     color: green;
     font-size: 20px;
     border: 0;
+    border-radius: 20px;
+    padding-left: 20px;
 }
 
 span {
@@ -51,7 +55,20 @@ span {
     margin: 20px;
 }
 
+#gains {
+    color: green;
+    font-size: 40px;
+    margin: 20px;
+}
+
 #graph {
-    width: 1000px;
-    height: 500px;
+    position: relative;
+    width: 2000px;
+    height: 1000px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
 }
