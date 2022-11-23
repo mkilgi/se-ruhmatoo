@@ -6,8 +6,28 @@ const myChart1 = document.querySelector('#myChart');
 const graph = document.querySelector('.graph');
 
 var total = 0;
-var count = 0;
 var gains = 0
+
+var myChart = new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: [],
+        datasets: [{
+            backgroundColor: 'green',
+            data: []
+        }]
+    },
+    options: {
+        responsive: false,
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: true
+        }
+
+    }
+});
 
 function calculate() {
     total = investment.value * ((1 + interest.value / 100) ** years.value);
@@ -19,8 +39,8 @@ function calculate() {
     const g = document.querySelector('#gains');
     g.innerHTML = gains.toFixed(2) + 'x'
 
-    var values = [];
-    var labelYears = [];
+    labelYears = [];
+    values = [];
 
     for (let i = 1; i <= years.value; i++) {
         a = investment.value * ((1 + interest.value / 100) ** i);
@@ -28,24 +48,8 @@ function calculate() {
         values.push(a);
     }
 
-    var myChart = new Chart("myChart", {
-        type: "bar",
-        data: {
-            labels: labelYears,
-            datasets: [{
-                backgroundColor: 'green',
-                data: values
-            }]
-        },
-        options: {
-            responsive: false,
-            legend: {
-                display: false
-            },
-            tooltips: {
-                enabled: false
-            }
-
-        }
-    });
+    myChart1.style.visibility = 'visible';
+    myChart.data.datasets[0].data = values;
+    myChart.data.labels = labelYears;
+    myChart.update()
 }
