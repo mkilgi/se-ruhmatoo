@@ -1,6 +1,6 @@
 body {
     /* background-image: url(https://wallpapercave.com/wp/wp3208977.jpg); */
-    background-color: black;
+    background-color: #55ADBB;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: luminosity;
@@ -28,7 +28,7 @@ a {
 }
 
 .title {
-    position: relative;
+    position: absolute;
     transform: translateY(-300px);
     color: white;
     margin: 0;
