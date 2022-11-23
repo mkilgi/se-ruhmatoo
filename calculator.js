@@ -28,6 +28,7 @@ function calculate() {
         values.push(a);
     }
 
+
     var myChart = new Chart("myChart", {
         type: "bar",
         data: {
@@ -49,3 +50,5 @@ function calculate() {
         }
     });
 }
+
+
