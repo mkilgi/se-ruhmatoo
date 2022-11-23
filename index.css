@@ -1,5 +1,9 @@
 body {
+    /* background-image: url(https://wallpapercave.com/wp/wp3208977.jpg); */
     background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -35,8 +39,12 @@ a {
 
 h2 {
     font-size: 12px;
-    margin: 20px;
-    color: grey;
+    margin: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#title1 {
+    margin: 50px;
 }
 
 a:hover {
