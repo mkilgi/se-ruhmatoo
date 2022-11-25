@@ -12,25 +12,50 @@
 </head>
 
 <body>
-    <div class="formbox">
-        <form action="#" onsubmit="calculate();return false">
-            <div class="form">
-                <span>Initial investment</span>
-                <input type="number" id="investment" name="investment" required>
 
-                <span>Interest rate</span>
-                <input type="number" id="interest" name="interest" required>
+    <div class="sec1">
+        <div class="formbox">
+            <span id="formTitle">Calculator</span>
 
-                <span>Years</span>
-                <input type="number" id="years" name="years" required>
+            <form action="#" onsubmit="calculate();return false">
+                <div class="form">
+                    <span>Initial investment</span>
+                    <input type="number" id="investment" name="investment" value="10000" required>
 
-                <button type="submit" id="submit" name="submit">Calculate</button>
+                    <span>Interest rate</span>
+                    <input type="number" id="interest" name="interest" value="8" required>
+
+                    <span>Years</span>
+                    <input type="number" id="years" name="years" value="20" required>
+
+                    <button type="submit" id="submit" name="submit">Calculate</button>
+                </div>
+            </form>
+
+            <button id="clear" onclick="clearInputs();">clear</button>
+
+        </div>
+
+        <div class="stats">
+            <div class="results">
+                <span id="statsTitle">Results</span>
+                <div class="info">
+                    <div class="labels">
+                        <span class="label">Starting amount: </span>
+                        <span class="label">Total interest: </span>
+                        <span class="label">Gains: </span>
+                        <span class="label">End balance: </span>
+                    </div>
+                    <div class="values">
+                        <span id="start">0</span>
+                        <span id="totalInterest">0</span>
+                        <span id="gains">0</span>
+                        <span id="value">0</span>
+                    </div>
+                </div>
             </div>
-    </div>
 
-    <div class="stats">
-        <span id="value">0</span>
-        <span id="gains">0</span>
+        </div>
     </div>
 
     <div class="graph">

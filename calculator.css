@@ -16,17 +16,23 @@ input {
     height: 35px;
 }
 
-button {
+#submit {
     background-color: green;
     color: white;
     font-size: 20px;
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 10px;
-    width: 320px;
+    width: 432px;
     height: 40px;
     border: 0;
+    transition: background-color 0.2s;
 }
+
+#submit:hover {
+    background-color: rgb(13, 179, 13);
+}
+
 
 form {
     display: block;
@@ -34,11 +40,17 @@ form {
 
 input {
     background-color: rgb(48, 46, 46);
-    color: green;
+    color: rgb(161, 160, 160);
     font-size: 20px;
     border: 0;
     border-radius: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
+    width: 400px;
+    transition: 0.2s;
+}
+
+input:hover {
+    background-color: rgb(73, 70, 70);
 }
 
 span {
@@ -46,35 +58,127 @@ span {
     color: white;
     margin: 10px;
     text-align: center;
-    font-size: 20px;
-}
-
-#value {
-    color: green;
-    font-size: 40px;
-    margin: 20px;
-}
-
-#gains {
-    color: green;
-    font-size: 40px;
-    margin: 20px;
+    font-size: 25px;
 }
 
 #graph {
     position: relative;
     width: 2000px;
     height: 1000px;
+
 }
 
 .stats {
     display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    visibility: hidden;
+    border: 2px solid rgb(20, 20, 20);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 2px rgb(44, 41, 41);
+    width: 485px;
+
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 {
+    display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin-bottom: 30px;
+
 }
 
 #myChart {
     min-width: 800px;
     min-height: 450px;
     visibility: hidden;
+    border: 2px solid rgb(20, 20, 20);
+    padding: 100px;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 2px rgb(44, 41, 41);
+    padding: 100px;
+}
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(20, 20, 20);
+    padding: 70px;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 2px rgb(44, 41, 41);
+    height: 400px;
+    width: 400px;
+}
+
+.formbox span {
+    color: rgb(161, 160, 160);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.labels span {
+    color: rgb(161, 160, 160);
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.values span {
+    color: red;
+}
+
+#statsTitle {
+    font-size: 30px;
+}
+
+#formTitle {
+    position: absolute;
+    transform: translateY(-210px);
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#clear {
+    position: absolute;
+    transform: translateY(220px);
+    border: 0;
+    border-radius: 20px;
+    width: 80px;
+    height: 22px;
+    background-color: rgb(48, 46, 46);
+    color: rgb(145, 143, 143);
+    transition: 0.2s;
+}
+
+#clear:hover {
+    background-color: rgb(88, 86, 86);
+    color: white;
 }
