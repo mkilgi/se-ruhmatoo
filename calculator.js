@@ -41,13 +41,33 @@ var myChart = new Chart("myChart", {
 
 function calculate() {
     total = investment.value * ((1 + interest.value / 100) ** years.value);
-    gains = total / investment.value
+    gains = total / investment.value;
 
     //Results
-    value.innerHTML = total.toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
+
+    if (investment.value >= 1000000000000) {
+        var t = (investment.value / 1000000000000).toFixed(2);
+        start.innerHTML = t + 'T $';
+    } else {
+        start.innerHTML = (investment.value - 0).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
+    }
+
+    if ((total - investment.value) >= 1000000000000) {
+        console.log(total);
+        tInt.innerHTML = ((total - investment.value) / 1000000000000).toFixed(2) + 'T $';
+    } else {
+        tInt.innerHTML = (total - investment.value).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
+    }
+
+    if (total >= 1000000000000) {
+        value.innerHTML = (total / 1000000000000).toFixed(2) + 'T $';
+    } else {
+        value.innerHTML = total.toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
+    }
+
     g.innerHTML = gains.toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'x';
-    tInt.innerHTML = (total - investment.value).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
-    start.innerHTML = (investment.value - 0).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
+
+
 
     labelYears = [];
     values = [];
