@@ -28,7 +28,7 @@ var myChart = new Chart("myChart", {
         }]
     },
     options: {
-        responsive: false,
+        responsive: true,
         legend: {
             display: false
         },
