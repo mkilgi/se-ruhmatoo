@@ -46,7 +46,7 @@ function calculate() {
     //Results
 
     if (investment.value >= 1000000000000) {
-        var t = (investment.value / 1000000000000).toFixed(2);
+        var t = (investment.value / 1000000000000).toLocaleString('en-US', { maximumFractionDigits: 2 });
         start.innerHTML = t + 'T $';
     } else {
         start.innerHTML = (investment.value - 0).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
@@ -54,13 +54,13 @@ function calculate() {
 
     if ((total - investment.value) >= 1000000000000) {
         console.log(total);
-        tInt.innerHTML = ((total - investment.value) / 1000000000000).toFixed(2) + 'T $';
+        tInt.innerHTML = ((total - investment.value) / 1000000000000).toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'T $';
     } else {
         tInt.innerHTML = (total - investment.value).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
     }
 
     if (total >= 1000000000000) {
-        value.innerHTML = (total / 1000000000000).toFixed(2) + 'T $';
+        value.innerHTML = (total / 1000000000000).toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'T $';
     } else {
         value.innerHTML = total.toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
     }
