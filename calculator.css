@@ -1,7 +1,7 @@
 body {
     background-color: black;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     display: flex;
     align-items: center;
@@ -87,12 +87,7 @@ span {
     flex-direction: column;
 }
 
-.sec1 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
 
-}
 
 #myChart {
     min-width: 800px;
@@ -122,6 +117,14 @@ span {
 
 .formbox span {
     color: rgb(161, 160, 160);
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    height: 40%;
+
 }
 
 .info {
