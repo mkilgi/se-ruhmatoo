@@ -1,7 +1,7 @@
 body {
-    background-color: black;
     width: 100%;
     height: 100%;
+    background-color: black;
     margin: 0;
     display: flex;
     align-items: center;
@@ -194,5 +194,28 @@ span {
 
 #clear:hover {
     background-color: rgb(88, 86, 86);
+    color: white;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+}
+
+#back {
+    text-decoration: none;
+    color: rgb(164, 164, 164);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 3px 3px 2px rgb(44, 41, 41);
+}
+
+#back:hover {
+    background-color: rgb(35, 34, 34);
     color: white;
 }
