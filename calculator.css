@@ -122,9 +122,9 @@ input {
 }
 
 #submit:hover {
-    background-color: rgb(13, 179, 13);
+    background-color: var(--hover1);
+    cursor: pointer;
 }
-
 
 form {
     display: block;
@@ -195,6 +195,7 @@ span {
 #clear:hover {
     background-color: rgb(88, 86, 86);
     color: white;
+    cursor: pointer;
 }
 
 .nav {
@@ -218,4 +219,5 @@ span {
 #back:hover {
     background-color: rgb(35, 34, 34);
     color: white;
+    cursor: pointer;
 }

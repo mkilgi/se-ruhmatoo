@@ -13,10 +13,11 @@ const start = document.querySelector('#start');
 const butn = document.querySelector('#submit');
 const val = document.querySelector('.values');
 
-
 var total = 0;
 var gains = 0;
 var totalInterest = 0;
+
+butn.style.setProperty('--hover1', 'rgb(13, 179, 13)');
 
 var myChart = new Chart("myChart", {
     type: "bar",
@@ -39,9 +40,18 @@ var myChart = new Chart("myChart", {
     }
 });
 
+function changeHover(color) {
+    butn.style.setProperty('--hover1', color);
+}
+
 function calculate() {
     total = investment.value * ((1 + interest.value / 100) ** years.value);
     gains = total / investment.value;
+
+    if (total >= 9999999999999999999999999) {
+        window.alert('Maximum value exceeded.')
+        return
+    }
 
     //Results
 
@@ -53,7 +63,6 @@ function calculate() {
     }
 
     if ((total - investment.value) >= 1000000000000) {
-        console.log(total);
         tInt.innerHTML = ((total - investment.value) / 1000000000000).toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'T $';
     } else {
         tInt.innerHTML = (total - investment.value).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
@@ -65,9 +74,11 @@ function calculate() {
         value.innerHTML = total.toLocaleString('en-US', { maximumFractionDigits: 2 }) + '$';
     }
 
-    g.innerHTML = gains.toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'x';
-
-
+    if (gains >= 1000000000000) {
+        g.innerHTML = (gains / 1000000000000).toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'T x';
+    } else {
+        g.innerHTML = gains.toLocaleString('en-US', { maximumFractionDigits: 2 }) + 'x';
+    }
 
     labelYears = [];
     values = [];
