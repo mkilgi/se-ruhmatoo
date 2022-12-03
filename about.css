@@ -40,13 +40,13 @@ h1 {
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 p1 {
     display: inline-block;
     max-width: 52%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 18%;
     left: 25%;
@@ -54,17 +54,17 @@ p1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 30%;
     left: 25%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 p2 {
     display: inline-block;
     max-width: 52%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 38%;
     left: 25%;
@@ -76,7 +76,7 @@ h3 {
     position: absolute;
     top: 52%;
     left: 25%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 p3 {
@@ -94,7 +94,7 @@ p4 {
     font-size: 1.5rem;
     max-width: 52%;
     position: absolute;
-    top: 73%;
+    top: 75%;
     left: 25%;
     color: rgb(161, 160, 160);
 }
@@ -102,8 +102,8 @@ p4 {
 .list {
     position: absolute;
     top: 64%;
-    left: 25%;
-    font-size: 30px;
+    left: 26%;
+    font-size: 25px;
     color: rgb(161, 160, 160);
 }
 
