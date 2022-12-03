@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    font-size: 5rem;
+    color: white;
+    width: 60%;
+    height: 90%;
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(20, 20, 20, 0.7);
+    box-shadow: 5px 5px 2px rgb(44, 41, 41);
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    font-size: 30px;
+}
+
+#p1 {
+    display: inline-block;
+    max-width: 52%;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    color: rgb(161, 160, 160);
+}
+
+h2 {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 30px;
+}
+
+#p2 {
+    display: inline-block;
+    max-width: 52%;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    color: rgb(161, 160, 160);
+}
+
+h3 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    font-size: 30px;
+}
+
+#p3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    max-width: 52%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    color: rgb(161, 160, 160);
+}
+
+#p4 {
+    display: inline-block;
+    font-size: 1.5rem;
+    max-width: 52%;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    color: rgb(161, 160, 160);
+}
+
+.list {
+    position: absolute;
+    top: 64%;
+    left: 26%;
+    font-size: 25px;
+    color: rgb(161, 160, 160);
+}
+
+.green {
+    background-color: transparent;
+    color: rgb(69, 155, 120);
+}
+
+.red {
+    background-color: transparent;
+    color: rgb(216, 48, 48);
+}
+
+.bold {
+    background-color: transparent;
+    color: rgb(69, 142, 155);
+    font-weight: 600;
+}
