@@ -1,27 +1,75 @@
-body {
-    background-color: black;
-    width: 100vw;
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
     height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(128, 123, 123) 0%,
+        rgba(105, 112, 111, 0.397) 50%,
+        rgb(165, 194, 191) 50%,
+        rgb(94, 182, 173) 100%
+        
+    );
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* .container{
+    height: 100%;
+    display:flex ; 
+    align-items: center;
+    justify-content: center;
+} */
+/* .buttons {
+    display: flex;
+} */
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    border: 2px solid rgb(107, 104, 104);
+    color: black;
+    bottom: 30%;
+    
 }
 
-a {
-    text-decoration: none;
-    width: 70px;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 30px;
+
+.btn-1{
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%);
+    background-color: rgb(147, 229, 221);
+    
+}
+
+.btn-2 {
+    position: absolute;
+    right: 25%;
+    transform: translate(50%);
+    background-color: rgb(135, 145, 143);
+}
+
+
+ h1{
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%);
+}
+h2{
+    position: absolute;
+    right: 25%;
+    transform: translate(50%);
 }
 
 #value {
     font-size: 30px;
     color: green;
     margin: 20px;
+
 }
