@@ -28,9 +28,10 @@ body {
     color: white;
     width: 60%;
     height: 90%;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 0;
+    border-radius: 25px;
     background-color: rgb(20, 20, 20, 0.7);
+    box-shadow: 5px 5px 2px rgb(44, 41, 41);
 }
 
 h1 {
