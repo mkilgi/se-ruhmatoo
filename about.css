@@ -1,10 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     height: 100vh;
-    background: linear-gradient(
+    width: 100vw;
+    /* background: linear-gradient(
         to right,
         rgb(128, 123, 123) 0%,
         rgba(105, 112, 111, 0.397) 15%,
@@ -12,51 +14,69 @@ body{
         rgb(190, 150, 126) 80%,
         rgb(165, 194, 191) 85%,
         rgb(94, 182, 173) 100%
-    );
+    ); */
+    background-image: linear-gradient(to right,
+            rgb(104, 98, 98) 0%,
+            rgb(90, 156, 150) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container{
+
+.container {
     font-size: 5rem;
+    color: white;
+    width: 60%;
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20, 0.7);
 }
-h1{
+
+h1 {
     font-size: 2rem;
     position: absolute;
     top: 10%;
     left: 25%;
 }
-p1{
+
+p1 {
     font-size: 1.5rem;
     max-width: 1000px;
     position: absolute;
     top: 18%;
     left: 25%;
+    color: rgb(161, 160, 160);
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
     position: absolute;
     top: 30%;
     left: 25%;
 }
-p2{
+
+p2 {
     font-size: 1.5rem;
     max-width: 1000px;
     position: absolute;
     top: 38%;
     left: 25%;
+    color: rgb(161, 160, 160);
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
     position: absolute;
     top: 60%;
     left: 25%;
 }
-p3{
+
+p3 {
     font-size: 1.5rem;
     max-width: 1000px;
     position: absolute;
     top: 68%;
     left: 25%;
+    color: rgb(161, 160, 160);
 }

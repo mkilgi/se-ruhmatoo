@@ -1,24 +1,24 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     height: 100vh;
-    background: linear-gradient(
-        to right,
-        rgb(128, 123, 123) 0%,
-        rgba(105, 112, 111, 0.397) 50%,
-        rgb(165, 194, 191) 50%,
-        rgb(94, 182, 173) 100%
-        
-    );
+    background: linear-gradient(to right,
+            rgb(104, 98, 98) 0%,
+            rgba(105, 112, 111, 0.397) 50%,
+            rgb(165, 194, 191) 50%,
+            rgb(90, 156, 150) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 * {
     box-sizing: border-box;
 }
+
 /* .container{
     height: 100%;
     display:flex ; 
@@ -28,7 +28,7 @@ body{
 /* .buttons {
     display: flex;
 } */
-.btn{
+.btn {
     text-decoration: none;
     padding: 20px 50px;
     font-size: 1.25rem;
@@ -36,35 +36,38 @@ body{
     border: 2px solid rgb(107, 104, 104);
     color: black;
     bottom: 30%;
-    
+
 }
 
 
-.btn-1{
+.btn-1 {
     position: absolute;
     left: 25%;
     transform: translate(-50%);
-    background-color: rgb(147, 229, 221);
-    
+    background-color: rgb(109, 160, 154);
+
 }
 
 .btn-2 {
     position: absolute;
     right: 25%;
     transform: translate(50%);
-    background-color: rgb(135, 145, 143);
+    background-color: rgb(152, 160, 158);
 }
 
 
- h1{
+h1 {
     position: absolute;
     left: 25%;
     transform: translate(-50%);
+    font-size: 35px;
 }
-h2{
+
+h2 {
     position: absolute;
     right: 25%;
     transform: translate(50%);
+    font-size: 35px;
 }
 
 #value {
