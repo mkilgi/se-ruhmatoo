@@ -43,7 +43,7 @@ h1 {
     font-size: 30px;
 }
 
-p1 {
+#p1 {
     display: inline-block;
     max-width: 52%;
     font-size: 1.3rem;
@@ -61,7 +61,7 @@ h2 {
     font-size: 30px;
 }
 
-p2 {
+#p2 {
     display: inline-block;
     max-width: 52%;
     font-size: 1.3rem;
@@ -79,7 +79,7 @@ h3 {
     font-size: 30px;
 }
 
-p3 {
+#p3 {
     display: inline-block;
     font-size: 1.5rem;
     max-width: 52%;
@@ -89,7 +89,7 @@ p3 {
     color: rgb(161, 160, 160);
 }
 
-p4 {
+#p4 {
     display: inline-block;
     font-size: 1.5rem;
     max-width: 52%;
