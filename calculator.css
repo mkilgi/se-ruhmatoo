@@ -1,17 +1,29 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    height: 60vw;
+    width: 90vw;
+    margin: 0;
+}
+
 .sec1 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
-    height: 400px;
-    width: 910px;
-    margin-top: 20px;
+    margin-bottom: 0;
+    height: 35%;
+    width: 51%;
+    margin-top: 2%;
+    border: 2px solid white;
 
 }
 
-#graph {
+.graph {
     position: relative;
-    width: 850px;
-    height: 430px;
+    width: 46vw;
+    height: 45vh;
+    border: 2px solid white;
 
 }
 
@@ -26,6 +38,7 @@
     background-color: rgb(20, 20, 20, 0.7);
     box-shadow: 5px 5px 2px rgb(44, 41, 41);
     width: 50%;
+    height: 88%;
 
 }
 
@@ -77,24 +90,16 @@
 
 
 #myChart {
-    min-width: 850px;
-    min-height: 430px;
-    max-width: 850px;
-    max-height: 430px;
+    min-width: 95%;
+    min-height: 90%;
+    max-width: 95%;
+    max-height: 90%;
     visibility: visible;
     border: 2px solid rgb(20, 20, 20);
-    border-radius: 20px;
+    border-radius: 3%;
     background-color: rgb(20, 20, 20, 0.7);
     box-shadow: 5px 5px 2px rgb(44, 41, 41);
-    padding: 30px;
-}
-
-
-input {
-    display: block;
-    margin: 10px;
-    width: 300px;
-    height: 35px;
+    padding: 3%;
 }
 
 #submit {
@@ -102,10 +107,10 @@ input {
     color: white;
     font-size: 18px;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 340px;
-    height: 33px;
+    margin-top: 7%;
+    margin-left: 0;
+    width: 18vw;
+    height: 3vh;
     border: 0;
     transition: background-color 0.2s;
 }
@@ -120,14 +125,15 @@ form {
 }
 
 input {
+    display: block;
     background-color: rgba(61, 61, 61, 0.7);
     color: rgb(161, 160, 160);
     font-size: 18px;
     border: 0;
     border-radius: 20px;
-    padding-left: 30px;
-    width: 310px;
-    height: 32px;
+    padding-left: 5%;
+    width: 17vw;
+    height: 3vh;
     transition: 0.2s;
 }
 
@@ -140,7 +146,7 @@ span {
     color: white;
     margin: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 140%;
 }
 
 
@@ -163,7 +169,7 @@ span {
 
 #formTitle {
     position: absolute;
-    transform: translateY(-160px);
+    transform: translateY(-390%);
     font-size: 25px;
     padding-bottom: 20px;
     color: white;
