@@ -1,17 +1,22 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .sec1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-    height: 400px;
-    width: 910px;
+    height: 40%;
+    width: 54%;
     margin-top: 20px;
 
 }
 
 #graph {
     position: relative;
-    width: 850px;
-    height: 430px;
+    width: 54%;
+    height: 40%;
 
 }
 
@@ -77,10 +82,10 @@
 
 
 #myChart {
-    min-width: 850px;
-    min-height: 430px;
-    max-width: 850px;
-    max-height: 430px;
+    min-width: 93%;
+    min-height: 100%;
+    max-width: 93%;
+    max-height: 100%;
     visibility: visible;
     border: 2px solid rgb(20, 20, 20);
     border-radius: 20px;
