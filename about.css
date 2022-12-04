@@ -23,63 +23,65 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 25px;
+    padding: 2%;
 
 }
 
 h1 {
-    font-size: 1.4rem;
-    position:  relative;
+    font-size: 45%;
+    position: relative;
 }
 
 #p1 {
     display: inline-block;
-    max-width:max-content;
-    font-size: 1.2rem;
-    position:  relative;
+    max-width: max-content;
+    font-size: 30%;
+    position: relative;
     color: rgb(161, 160, 160);
 }
 
 h2 {
-    font-size: 1.4rem;
-    position:  relative;
+    font-size: 45%;
+    position: relative;
 }
 
 #p2 {
     display: inline-block;
-    max-width:max-content;
-    font-size: 1.2rem;
+    max-width: max-content;
+    font-size: 30%;
     position: relative;
     color: rgb(161, 160, 160);
 }
 
 h3 {
-    font-size: 1.4rem;
-    position:  relative;
+    font-size: 45%;
+    position: relative;
 }
 
 #p3 {
     display: inline-block;
-    font-size: 1.2rem;
-    max-width:max-content;
-    position:  relative;
+    font-size: 30%;
+    max-width: max-content;
+    position: relative;
     color: rgb(161, 160, 160);
 }
 
 #ul1 {
     display: inline-block;
     position: relative;
-    left:2%;
-    font-size: 1.3rem;
+    left: 2%;
+    font-size: 32%;
     color: rgb(161, 160, 160);
 }
+
 #p4 {
     display: inline-block;
-    font-size: 1.2rem;
-    max-width:max-content;
-    position:  relative;
+    font-size: 30%;
+    max-width: max-content;
+    position: relative;
     color: rgb(161, 160, 160);
 }
+
 /* 
 .list {
     display: inline-block;
