@@ -47,12 +47,22 @@ body {
     background-color: rgb(109, 160, 154);
 
 }
+.btn-1:hover {
+    background-color: rgb(135, 184, 178);
+    color: white;
+    cursor: pointer;
+}
 
 .btn-2 {
     position: absolute;
     right: 25%;
     transform: translate(50%);
     background-color: rgb(152, 160, 158);
+}
+.btn-2:hover {
+    background-color: rgb(173, 186, 183);
+    color: white;
+    cursor: pointer;
 }
 
 

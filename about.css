@@ -9,88 +9,84 @@ body {
 }
 
 .container {
+    position: absolute;
     font-size: 5rem;
     color: white;
     width: 60%;
-    height: 90%;
+    min-height: 90%;
     border: 0;
     border-radius: 25px;
     background-color: rgb(20, 20, 20, 0.7);
     box-shadow: 5px 5px 2px rgb(44, 41, 41);
     padding: 10px;
+    margin-top: 0;
 }
 
 h1 {
     font-size: 2rem;
-    position: absolute;
-    top: 10%;
-    left: 25%;
+    position:  relative;
     font-size: 30px;
 }
 
 #p1 {
     display: inline-block;
-    max-width: 52%;
+    max-width:max-content;
     font-size: 1.3rem;
-    position: absolute;
-    top: 18%;
-    left: 25%;
+    position:  relative;
     color: rgb(161, 160, 160);
 }
 
 h2 {
     font-size: 1.3rem;
-    position: absolute;
-    top: 30%;
-    left: 25%;
+    position:  relative;
     font-size: 30px;
 }
 
 #p2 {
     display: inline-block;
-    max-width: 52%;
+    max-width:max-content;
     font-size: 1.3rem;
-    position: absolute;
-    top: 38%;
-    left: 25%;
+    position: relative;
     color: rgb(161, 160, 160);
 }
 
 h3 {
     font-size: 1.5rem;
-    position: absolute;
-    top: 52%;
-    left: 25%;
+    position:  relative;
     font-size: 30px;
 }
 
 #p3 {
     display: inline-block;
     font-size: 1.5rem;
-    max-width: 52%;
-    position: absolute;
-    top: 60%;
-    left: 25%;
+    max-width:max-content;
+    position:  relative;
     color: rgb(161, 160, 160);
 }
 
+#ul1 {
+    display: inline-block;
+    position: relative;
+    left:2%;
+    font-size: 1.5rem;
+    color: rgb(161, 160, 160);
+}
 #p4 {
     display: inline-block;
     font-size: 1.5rem;
-    max-width: 52%;
-    position: absolute;
-    top: 75%;
-    left: 25%;
+    max-width:max-content;
+    position:  relative;
     color: rgb(161, 160, 160);
 }
-
+/* 
 .list {
+    display: inline-block;
     position: absolute;
-    top: 64%;
-    left: 26%;
-    font-size: 25px;
+    top: 50%;
+    font-size: 1.5rem;
     color: rgb(161, 160, 160);
-}
+} */
+
 
 .green {
     background-color: transparent;
